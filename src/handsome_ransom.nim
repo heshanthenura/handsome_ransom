@@ -10,4 +10,4 @@ for filePath in walkFiles(currentDir & "/*"):
       writeFile("enc" & name, encoded)
       removeFile(name)
     except IOError as e:
-      echo "Error processing file ", name, ": ", e.msge
+      echo "Error processing file ", name, ": ", e.msg
